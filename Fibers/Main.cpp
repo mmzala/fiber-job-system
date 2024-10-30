@@ -96,7 +96,7 @@ void MainFiber(void* system)
     jobSystem.RunJobs(vectorJobs, numVectorJobs, &counter); // We can reuse the counter
     jobSystem.WaitForCounter(&counter);
 
-    std::cout << numVectorJobs << " Jobs done. Left: " << counter << " jobs\n";
+    std::cout << numVectorJobs << " Vector jobs done\n";
 
     std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
 
